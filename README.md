@@ -70,6 +70,7 @@ src/
 npm install pnpm
 pnpm install
 pnpm run dev
+```
 
 Visit the app
 English: http://localhost:3000/en
@@ -90,3 +91,22 @@ useLocale must be used within a LocaleProvider:
 -
 Created by [Your Nooknook or Team Nooknook]
 Frontend powered by Next.js, Bootstrap 5, Zustand, and next-intl.
+
+### 2. Git Hooks with Husky
+This project uses Husky to run automated checks before each commit to ensure code quality.
+The following commands run automatically on pre-commit:
+
+```bash
+pnpm type-check      # Run TypeScript type checking
+pnpm lint --fix      # Run ESLint and auto-fix issues
+```
+
+Setting up Husky hooks
+If this is your first time setting up the project, run the following command to enable Husky:
+
+```bash
+pnpm husky install
+```
+If the .husky/pre-commit file is missing, you can create it by running:
+
+pnpm dlx husky-init && pnpm install

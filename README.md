@@ -107,6 +107,10 @@ If this is your first time setting up the project, run the following command to 
 ```bash
 pnpm husky install
 ```
+
 If the .husky/pre-commit file is missing, you can create it by running:
 
+```bash
 pnpm dlx husky-init && pnpm install
+npx husky add .husky/pre-commit "npx lint-staged"
+```

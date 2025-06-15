@@ -27,21 +27,37 @@ This is a multilingual web application built with **Next.js 15 (App Router)**, s
 ## 📁 Project Structure
 
 src/
+
 ├── app/
+
 │ ├── [locale]/
+
 │ │ ├── layout.tsx # Locale-aware layout
+
 │ │ └── page.tsx # Localized home page
+
 │ └── layout.tsx # Root layout
+
 ├── components/
+
 │ ├── LangSwitcher/ # Language switcher component
+
 │ └── UI/ # Reusable UI components using Bootstrap
+
 ├── messages/
+
 │ ├── en.json # English translations
+
 │ └── th.json # Thai translations
+
 ├── stores/ # Zustand stores
+
 │ └── useStore.ts # Example Zustand state
+
 ├── i18n.ts # getMessages() function
+
 ├── middleware.ts # next-intl middleware
+
 
 
 ---

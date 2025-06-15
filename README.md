@@ -88,10 +88,6 @@ Invalid i18n request configuration:
 useLocale must be used within a LocaleProvider:
 ➤ Ensure your component is wrapped with NextIntlClientProvider.
 
--
-Created by [Your Nooknook or Team Nooknook]
-Frontend powered by Next.js, Bootstrap 5, Zustand, and next-intl.
-
 ### 2. Git Hooks with Husky
 This project uses Husky to run automated checks before each commit to ensure code quality.
 The following commands run automatically on pre-commit:
@@ -114,3 +110,6 @@ If the .husky/pre-commit file is missing, you can create it by running:
 pnpm dlx husky-init && pnpm install
 npx husky add .husky/pre-commit "npx lint-staged"
 ```
+-
+Created by [Nooknook]
+Frontend powered by Next.js, Bootstrap 5, Zustand, and next-intl.

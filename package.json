@@ -7,14 +7,20 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate:api": "orval"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.81.2",
     "bootstrap": "^5.3.6",
+    "install": "^0.13.0",
     "next": "15.3.3",
     "next-intl": "^4.1.0",
+    "npm": "^11.4.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "root": "git+https://github.com/tanstack/react-query.git",
+    "zustand": "^5.0.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -25,6 +31,7 @@
     "eslint-config-next": "15.3.3",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
+    "orval": "^7.10.0",
     "typescript": "^5"
   },
   "lint-staged": {

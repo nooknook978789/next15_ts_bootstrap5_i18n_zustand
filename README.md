@@ -11,7 +11,8 @@ This is a multilingual web application built with **Next.js 15 (App Router)**, s
 - [Bootstrap 5](https://getbootstrap.com/)
 - [Zustand](https://zustand-demo.pmnd.rs/) – state management
 - [next-intl](https://next-intl.dev/) – internationalization & localization
-
+- [Orval](https://orval.dev/) – API client code generator from OpenAPI specificatio
+- 🔗 API client automatically generated using **Orval** from OpenAPI specs, ensuring consistent and type-safe API communication
 ---
 
 ## 🚀 Features
@@ -109,6 +110,16 @@ If the .husky/pre-commit file is missing, you can create it by running:
 ```bash
 pnpm dlx husky-init && pnpm install
 npx husky add .husky/pre-commit "npx lint-staged"
+```
+
+### Generate API Client with Orval
+
+This project uses [Orval](https://orval.dev/) to generate the API client from OpenAPI specifications.
+
+To generate or update API client code, run:
+
+```bash
+pnpm run generate:api
 ```
 -
 Created by [Nooknook]
